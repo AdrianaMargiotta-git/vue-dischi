@@ -8,12 +8,47 @@ body{
     height: 100vh;
 }
 
-header .container-haeder{
-    height: 80px;
-    background-color: sandybrown;
+img{
+    max-width: 100%;
 }
 
+    /* rules for header */
+header .container-haeder{
+    height: 80px;
+    background-color: #2e3a46;
+}
+
+.container-haeder img{
+    width: 50px;
+    margin: 10px;
+}
+
+    /* rules for main */
 main {
-    height: calc( 100vh - 80px);
-    background-color: aquamarine;
+    background-color: #1e2d3b;
+}
+
+.recordsList{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 10px;
+    list-style: none;
+}
+
+.recordSingle{
+    flex-basis: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #2e3a46;
+}
+
+.dischi .recordsList .recordSingle .title{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.dischi .recordsList .recordSingle .author, .dischi .recordsList .recordSingle .year{
+    color: #808080;
 }
