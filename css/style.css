@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+header .container-haeder{
+    height: 80px;
+    background-color: sandybrown;
+}
+
+main {
+    height: calc( 100vh - 80px);
+    background-color: aquamarine;
+}

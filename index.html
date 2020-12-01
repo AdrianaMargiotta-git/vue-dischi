@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dischi musicali</title>
+</head>
+<body>
+
+    <div id="app">
+        <header>
+            <div class="container-haeder">
+                <!-- inserire l'immagine -->
+            </div>
+        </header>
+    
+        <main>
+            <div class="dischi">
+                <ul>
+                    <li v-for="record in listaRecords">
+                        <div>
+                            <!-- immagine -->
+                            <!-- RICORDA: inserire i due punti prima di src e alt -->
+                            <img :src="record.poster" :alt="record.title">
+                        </div>
+                        <!-- titolo -->
+                        <h2>{{record.title}}</h2>
+                        <!-- autore -->
+                        <p>{{record.author}}</p>
+                        <!-- anno -->
+                        <p>{{record.year}}</p>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    
+    <script src="js/script.js"></script>
+
+</body>
+</html>
