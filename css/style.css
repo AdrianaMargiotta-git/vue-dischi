@@ -12,7 +12,7 @@ img{
     max-width: 100%;
 }
 
-    /* rules for header */
+/* rules for header */
 header .container-haeder{
     height: 80px;
     background-color: #2e3a46;
@@ -23,11 +23,19 @@ header .container-haeder{
     margin: 10px;
 }
 
-    /* rules for main */
+/* rules for main */
 main {
+    min-height: calc(100vh - 80px);
     background-color: #1e2d3b;
 }
 
+    /* rules for main seleziona */
+.seleziona{
+    text-align: center;
+    color: #ffffff;
+}
+
+    /* rules for main dischi */
 .recordsList{
     display: flex;
     justify-content: center;
@@ -51,4 +59,9 @@ main {
 
 .dischi .recordsList .recordSingle .author, .dischi .recordsList .recordSingle .year{
     color: #808080;
+}
+
+.dischi .recordsList .recordSingle .genre{
+    color: #ffffff;
+    margin-top: 6px;
 }

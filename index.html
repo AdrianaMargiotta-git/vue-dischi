@@ -20,6 +20,16 @@
         </header>
     
         <main>
+            <div class="seleziona">
+                <label for="genere">Filtra i brani per genere</label>
+                <select v-model="genereAttuale" @change="selectGenere">
+                    <option value="all">All</option>
+                    <option value="metal">Metal</option>
+                    <option value="pop">Pop</option>
+                    <option value="rock">Rock</option>
+                    <option value="jazz">Jazz</option>
+                </select>
+            </div>
             <div class="dischi">
                 <ul class="recordsList">
                     <li v-for="record in listaRecords" class="recordSingle">
@@ -34,6 +44,8 @@
                         <p class="author">{{record.author}}</p>
                         <!-- anno -->
                         <p class="year">{{record.year}}</p>
+                        <!-- genere -->
+                        <p class="genre">{{record.genre}}</p>
                     </li>
                 </ul>
             </div>
